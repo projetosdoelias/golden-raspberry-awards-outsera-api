@@ -40,7 +40,7 @@ npm run dev
 
 ## Implementação dos requisitos
 ### Stacks utilizadas
-Construi uma API simples utilizando o **Express.js** com **TypeScript** e o **Typeorm** como ORM modelagem e integração com base de dados, o banco de dados escolhido foi o **Sqlite** pelo fato de ser um banco armazenado em memória sem a necessidade de instalações externas a aplicação conforme solicitado nos requisitos do teste. Para os testes de integração usei o **Supertest** e o **Jest**.
+Construi uma API simples utilizando o **Express.js** com **TypeScript** e o **Typeorm** como ORM para modelagem e integração com base de dados, o banco de dados escolhido foi o **Sqlite** pelo fato de ser um banco armazenado em memória sem a necessidade de instalações externas à aplicação conforme solicitado nos requisitos do teste. Para os testes de integração usei o **Supertest** e o **Jest**.
 
 
 ### Leitura do csv
@@ -53,7 +53,8 @@ Conforme solicitado implementei a rota para "Obter o produtor com maior interval
 A rota implementada (implementada conforme o formato solicitado), caso queira visualizar diferentes resultados basta alterar o arquivo data/movielist.csv
 
 **Método**: [GET] <br>
-**URL**: http://localhost:3000/producers/winners/intervals <br>
+**URL**: http://localhost:3000/producers/winners/intervals  <br>
+***A porta default é 3000 mas caso esteja executando em outra porta é necessário ajustar a url*** <br>
 **Exemplo de Retorno**: <Br>
 ``` 
 {
@@ -81,6 +82,10 @@ Os testes de integração estão disponíveis no repositório /src/tests/ basica
 * Cenário onde produtores que venceram mais de uma vez e seus intervalos máximos e mínimos
 * Cenário onde filmes com multiplos produtores que venceram mais de uma vez e compartilham do mesmo intervalo (testa se listou todos que "empataram" em relação ao intervalo)
 * Cenário onde não são encontrados vencedores com intervalos mínimos e máximos
+#### Executando os testes de integração:
+```
+npm run test
+```
 
 ### Arquitetura / Design
 Implementei uma arquitetura simples, porém organizada e bem estruturada com o objetivo de facilitar a leitura e reuso do código, além de aplicar algumas boas práticas básicas na organização de uma aplicação.
