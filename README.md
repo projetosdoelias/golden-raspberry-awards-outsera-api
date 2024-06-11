@@ -54,7 +54,7 @@ A rota implementada (implementada conforme o formato solicitado), caso queira vi
 
 **Método**: [GET] <br>
 **URL**: http://localhost:3000/producers/winners/intervals  <br>
-***A porta default é 3000 mas caso esteja executando em outra porta é necessário ajustar a url*** <br>
+<sub>***A porta default é 3000 mas caso esteja executando em outra porta é necessário ajustar a url*** </sub><br>
 **Exemplo de Retorno**: <Br>
 ``` 
 {
