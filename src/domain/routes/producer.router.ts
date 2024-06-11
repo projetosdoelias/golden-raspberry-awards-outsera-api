@@ -9,7 +9,7 @@ producerRouter.get('/winners/intervals', (req: Request, res: Response) => {
 });
 
 producerRouter.get('/',(req: Request, res: Response) => {
-  res.json(`Hello World! This is an API about the Golden Raspberry Awards`)
+  res.json(`Hello World! This is an API about the Golden Raspberry Awards implemented by Elias Lourenço`)
 
 } )
 export default producerRouter;

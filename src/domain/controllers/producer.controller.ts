@@ -14,7 +14,8 @@ export class ProducerController {
       const producersGap = await this.service.getProducerWinIntervals();
       return res.json(producersGap);
     } catch (error) { 
-      throw new Error('error while retrieving data from producers intervals')
+      return res.status(400).json('Erro ao buscar dados dos intervalos dos produtores');
+      
     } 
   }
 }

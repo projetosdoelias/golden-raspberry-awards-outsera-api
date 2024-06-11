@@ -87,7 +87,7 @@ Implementei uma arquitetura simples, porém organizada e bem estruturada com o o
 #### Breve resumo sobre as camadas que decidi implementar
 * / = Raiz onde são armazenados os arquivos de configuração da aplicação e as pastas necessárias para seu funcionamento.
 * src/ = pasta principal da aplicação, contém as pastas principais e os arquivos que iniciam a aplicação e o servidor node
-* src/domain/controllers/ = Contém os controllers da aplicação, responsáveis por receber as requisições e solicitar o processamento através de um service
+* src/domain/controllers/ = Contém os controllers da aplicação, responsáveis por controlar e executar as entradas e saídas de determinada rota, irá receber a requisição chamar o serviço responsável por processar as regras de negócio e retornar o sucesso ou erro no processamento. 
 * src/domain/services/ = Contém os serviços da parte negocial da aplicação, responsáveis por recuperar os dados através de repositórios do TypeORM e processar as regras de negócio do domínio específico
 * src/domain/entities/ = Contém as entidades pertencentes ao modelo da aplicação 
 * src/infra/database/ = Contém os arquivos configuração do banco de dados
