@@ -78,7 +78,8 @@ A rota implementada (implementada conforme o formato solicitado), caso queira vi
 ```
 
 ### Testes de integração
-Os testes de integração estão disponíveis no repositório /src/tests/ basicamente eu testei 3 cenários:
+Os testes de integração estão disponíveis no repositório /src/tests/ basicamente eu testei 4 cenários:
+* **Cenário que valido exatamente o valor do retorno segundo o movielist.csv fornecido no teste** 
 * Cenário onde produtores que venceram mais de uma vez e seus intervalos máximos e mínimos
 * Cenário onde filmes com multiplos produtores que venceram mais de uma vez e compartilham do mesmo intervalo (testa se listou todos que "empataram" em relação ao intervalo)
 * Cenário onde não são encontrados vencedores com intervalos mínimos e máximos
